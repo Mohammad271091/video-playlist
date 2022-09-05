@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    /* font-weight: normal; */
+}
+
+.vid {
+    position: relative;
+}
+
+
+/* DARK MODE TOGGLE  */
+body.dark {
+    background-color: #181818;
+    /* transition: all 0.3s linear; */
+}
+
+body.dark .main-video .title {
+    color: white !important;
+}
+
+body.dark .containers .video-list .vid:hover {
+    background: rgb(63, 63, 63);
+}
+
+body.dark .containers .video-list .vid.active {
+    background: rgb(63, 63, 63);
+}
+
+body.dark .containers .video-list {
+    border-color: #444;
+}
+
+body.dark .containers .video-list .vid.active .title {
+    color: #fff;
+}
+
+body.dark .containers .video-list .vid .title {
+    color: white;
+}
+
+body.dark nav {
+    background-color: #212121 !important;
+}
+
+body.dark .navbar-brand {
+    color: white !important;
+}
+
+body.dark #navbarDropdown {
+    color: white !important;
+}
+
+body.dark .dropdown-menu {
+    background-color: #212121;
+}
+
+body.dark .dropdown-item {
+    color: white;
+}
+
+body.dark .dropdown-item:hover {
+    background-color: #444;
+}
+
+/* END OF DARK MODE TOGGLE  */
+
+i:hover {
+    cursor: pointer;
+}
+
+
+/* video duration label  */
+button.btn.btn-sm {
+    position: absolute;
+    bottom: 10%;
+    right: 0.5rem;
+    /* background-color: rgb(181, 181, 181); */
+    background-color: black;
+    /* color: black; */
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+/* .video-js .vjs-big-play-button {
+  color: tomato;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+} */
+
+
+
+/* 
+a:hover{
+    color: white !important;
+} */
+
+body {
+    margin-top: 0;
+    /* background: #eee; */
+    /* background: #1f2029; previous*/
+
+    /* youtube */
+    /* background: #181818;  FOR DARK MODE*/
+    background: rgb(248, 250, 252);
+    /* transition: all 0.3s linear; */
+
+}
+
+.heading {
+    color: #444;
+    font-size: 30px;
+    text-align: left;
+    padding: 25px;
+}
+
+.containers {
+    display: grid;
+    grid-template-columns: 3fr 1.2fr;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 5px 5%;
+    margin-top: 10px;
+    /* by me */
+
+}
+
+.containers .main-video {
+    /* background: #fff; */
+    /* background: gray; */
+    /* background: #666;  THIS IS THE LAST USED*/
+    /* background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg); */
+    background: "transparent";
+    /* border-radius: 5px; THIS WAS ALSO USED */
+    padding: 10px;
+}
+
+.containers .main-video .video {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.containers .main-video .title {
+    max-width: 700px;
+    float: right;
+    /* color:#333; */
+    /* color: white; DARK MODE */
+    color: black;
+    /* font-size: 23px; original */
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* ARABIC CONTENT  */
+    direction: rtl;
+    overflow: hidden;
+}
+
+.containers .video-list {
+    /* background: #fff; */
+    margin-top: 10px;
+    background: fixed;
+    border-style: solid;
+    border-width: 0.05em;
+    /* comment bordercolor in DARK MODE  */
+    border-color: rgb(211, 210, 210);
+    /* height: 520px; original */
+    overflow-y: scroll;
+    /* height: 712px; */
+    height: 790px;
+    /* FOR ARABIC CONTENT  */
+    float: right;
+    direction: rtl;
+    text-align: right;
+    /* border-top-right-radius: 1.2em; */
+    border-bottom-right-radius: 1.2em;
+
+}
+
+
+.containers .video-list::-webkit-scrollbar {
+    /* background: #ccc; */
+    border-radius: 50px;
+    width: 0.5em;
+}
+
+.containers .video-list::-webkit-scrollbar-track {
+    width: 7px;
+}
+
+.containers .video-list::-webkit-scrollbar-thumb {
+    /* background: #666; */
+    background: rgb(184, 183, 183);
+    border-radius: 50px;
+
+}
+
+
+.containers .video-list .vid video {
+    width: 100px;
+    border-radius: 5px;
+    height: 60px;
+    /*me*/
+}
+
+.containers .video-list .vid {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* background: #f7f7f7; */
+    overflow-x: hidden;
+    /* background: #ccc;  */
+    /* border-radius: 5px; */
+    margin: 0px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+.containers .video-list .vid:hover {
+    /* background: #eee; */
+    /* background: #666; */
+    /* background: rgb(63, 63, 63); FOR DARK MODE  */
+    background: rgb(188, 185, 182);
+
+
+}
+
+.containers .video-list .vid.active {
+    /* background: #2980b9; */
+    /* background: #666; */
+    /* background: rgb(63, 63, 63); FOR DARK MODE */
+    background: rgb(188, 185, 182);
+}
+
+.containers .video-list .vid.active .title {
+    /* color: #fff; DARK MODE */
+    color: black;
+}
+
+
+.containers .video-list .vid .title {
+    /* color: #333; */
+    /* color: white; DARK MODE*/
+    color: black;
+    font-size: 17px;
+}
+
+/* @media (max-width:991px) {
+
+    .containers {
+        grid-template-columns: 1.5fr 1fr;
+        padding: 10px;
+    }
+
+
+
+} */
+
+/* 768 */
+
+/* 
+@media only screen and (max-width: 1300px) and (min-width: 1117px) {
+    .containers .video-list {
+        height: 50%;
+    }
+
+} */
+
+@media (max-width:1116px) {
+
+    .containers {
+        grid-template-columns: 1fr;
+        gap: 0px;
+        padding: 0px;
+        margin-top: 0px;
+    }
+
+    .containers .video-list {
+        height: 45%;
+        overflow-y: auto;
+    }
+
+    body{
+        overflow-y: hidden;
+    }
+    
+    .py-4 {
+        padding-top: 0 !important;
+    }
+
+    .containers .main-video {
+        padding: 0;
+    }
+
+    .containers .main-video .title {
+        display: none;
+
+    }
+}

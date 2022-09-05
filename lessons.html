@@ -1,0 +1,356 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+
+<!-- Arabic font -->
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+                                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                                        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Noto+Kufi+Arabic:wght@200;248;251&display=swap" rel="stylesheet"> -->
+<!-- CSS: font-family: 'Cairo', sans-serif;
+                                        font-family: 'Noto Kufi Arabic', sans-serif; -->
+
+<!-- google font for arabic  -->
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@200;300&display=swap" rel="stylesheet"> -->
+
+
+
+
+<!-- style for the page -->
+<link rel="stylesheet" href="lessons_style.css">
+
+
+
+<!-- style for video.js  -->
+<link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
+
+
+
+<!-- Quality selector CSS  -->
+<link href="https://unpkg.com/@silvermine/videojs-quality-selector/dist/css/quality-selector.css" rel="stylesheet" />
+<style>
+    * {
+        font-family: 'Noto Kufi Arabic', 'verdana', sans-serif;
+    }
+</style>
+
+
+<a href="" id="dark" class="btn btn-outline-primary">Dark Mode</a>
+
+
+<div class="containers">
+    <div class="main-video">
+        <div class="video">
+            <video autofocus id="playedVideo" class="video-js vjs-big-play-centered" max-width="100%" height="auto">
+                <source
+                    src="https://cdn.videvo.net/videvo_files/video/free/2013-09/large_watermarked/AbstractRotatingCubesVidevo_preview.mp4"
+                    type="video/mp4" label="720P" />
+                <source src="./lessons/songs.mp4" type="video/mp4" label="480P" />
+                <source src="./lessons/mass vs ineria.mp4" type="video/mp4" label="144P" />
+                <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+            </video>
+            <h3 class="title">01. heres the video title</h3>
+        </div>
+    </div>
+
+    <!-- here comes the video list  -->
+    <div class="video-list">
+
+        <div id="1" class="vid active">
+            <video>
+                <source
+                    src="https://cdn.videvo.net/videvo_files/video/free/2013-09/large_watermarked/AbstractRotatingCubesVidevo_preview.mp4"
+                    type="video/mp4" label="720P" />
+                <source
+                    src="https://cdn.videvo.net/videvo_files/video/free/2013-09/large_watermarked/AbstractRotatingCubesVidevo_preview.mp4"
+                    type="video/mp4" label="480P" />
+                <source
+                    src="https://cdn.videvo.net/videvo_files/video/free/2013-09/large_watermarked/AbstractRotatingCubesVidevo_preview.mp4"
+                    type="video/mp4" label="144P" />
+            </video>
+
+            <h3 class="title">01. heres the video title</h3>
+
+            <button class="btn btn-dark btn-sm"><span class="badge"></span></button>
+
+
+
+        </div>
+        <div id="2" class="vid">
+            <video>
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-traveling-on-the-highway-on-a-sunny-day-42368-large.mp4"
+                    type="video/mp4" label="720P" />
+                <source
+                    src="https://cdn.videvo.net/videvo_files/video/free/2013-09/large_watermarked/AbstractRotatingCubesVidevo_preview.mp4"
+                    type="video/mp4" label="480P" />
+                <source
+                    src="https://media.istockphoto.com/videos/digital-abstract-optic-lights-environment-video-id1272167390"
+                    type="video/mp4" label="144P" />
+            </video>
+            <h3 class="title">02. heres the video title</h3>
+            <button class="btn btn-dark btn-sm"><span class="badge"></span></button>
+        </div>
+        <div id=3 class="vid">
+            <video muted>
+                <source
+                    src="https://cdn.videvo.net/videvo_files/video/free/2013-08/large_watermarked/hd0992_preview.mp4"
+                    type="video/mp4" label="720P" />
+                <source
+                    src="https://cdn.videvo.net/videvo_files/video/free/2013-08/large_watermarked/hd0992_preview.mp4"
+                    type="video/mp4" label="480P" />
+                <source
+                    src="https://cdn.videvo.net/videvo_files/video/free/2013-08/large_watermarked/hd0992_preview.mp4"
+                    type="video/mp4" label="144P" />
+            </video>
+            <h3 class="title">03. heres the video title</h3>
+            <button class="btn btn-dark btn-sm"><span class="badge"></span></button>
+
+
+        </div>
+        <div id=4 class="vid">
+            <video muted>
+                <source
+                    src="https://media.istockphoto.com/videos/digital-abstract-optic-lights-environment-video-id1272167390"
+                    type="video/mp4" label="720P" />
+                <source
+                    src="https://media.istockphoto.com/videos/digital-abstract-optic-lights-environment-video-id1272167390"
+                    type="video/mp4" label="480P" />
+                <source
+                    src="https://media.istockphoto.com/videos/digital-abstract-optic-lights-environment-video-id1272167390"
+                    type="video/mp4" label="144P" />
+            </video>
+            <h3 class="title">04. heres the video title</h3>
+            <button class="btn btn-dark btn-sm"><span class="badge"></span></button>
+
+
+        </div>
+        <div id=5 class="vid">
+            <video muted>
+                <source
+                    src="https://media.istockphoto.com/videos/digital-abstract-optic-lights-environment-video-id1272167390"
+                    type="video/mp4" label="720P" />
+                <source
+                    src="https://media.istockphoto.com/videos/digital-abstract-optic-lights-environment-video-id1272167390"
+                    type="video/mp4" label="480P" />
+                <source
+                    src="https://media.istockphoto.com/videos/digital-abstract-optic-lights-environment-video-id1272167390"
+                    type="video/mp4" label="144P" />
+            </video>
+            <h3 class="title">05. heres the video title</h3>
+            <button class="btn btn-dark btn-sm"><span class="badge"></span></button>
+
+
+        </div>
+        <div id=6 class="vid">
+            <video muted>
+                <source
+                    src="https://media.istockphoto.com/videos/digital-abstract-optic-lights-environment-video-id1272167390"
+                    type="video/mp4" label="720P" />
+                <source
+                    src="https://media.istockphoto.com/videos/digital-abstract-optic-lights-environment-video-id1272167390"
+                    type="video/mp4" label="480P" />
+                <source
+                    src="https://media.istockphoto.com/videos/digital-abstract-optic-lights-environment-video-id1272167390"
+                    type="video/mp4" label="144P" />
+            </video>
+            <h3 class="title">06. heres the video title</h3>
+            <button class="btn btn-dark btn-sm"><span class="badge"></span></button>
+
+
+        </div>
+        <div id=7 class="vid">
+            <video muted>
+                <source
+                    src="https://media.istockphoto.com/videos/digital-abstract-optic-lights-environment-video-id1272167390"
+                    type="video/mp4" label="720P" />
+                <source
+                    src="https://media.istockphoto.com/videos/digital-abstract-optic-lights-environment-video-id1272167390"
+                    type="video/mp4" label="480P" />
+                <source
+                    src="https://media.istockphoto.com/videos/digital-abstract-optic-lights-environment-video-id1272167390"
+                    type="video/mp4" label="144P" />
+            </video>
+            <h3 class="title">07. heres the video title</h3>
+            <button class="btn btn-dark btn-sm"><span class="badge"></span></button>
+
+
+        </div>
+        <div id=8 class="vid">
+            <video muted>
+                <source
+                    src="https://media.istockphoto.com/videos/digital-abstract-optic-lights-environment-video-id1272167390"
+                    type="video/mp4" label="720P" />
+                <source
+                    src="https://media.istockphoto.com/videos/digital-abstract-optic-lights-environment-video-id1272167390"
+                    type="video/mp4" label="480P" />
+                <source
+                    src="https://media.istockphoto.com/videos/digital-abstract-optic-lights-environment-video-id1272167390"
+                    type="video/mp4" label="144P" />
+            </video>
+            <h3 class="title">08. heres the video title</h3>
+            <button class="btn btn-dark btn-sm"><span class="badge"></span></button>
+
+
+        </div>
+        <div id=9 class="vid">
+            <video muted>
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-stunning-sunset-seen-from-the-sea-4119-large.mp4"
+                    type="video/mp4" label="720P" />
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-stunning-sunset-seen-from-the-sea-4119-large.mp4"
+                    type="video/mp4" label="480P" />
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-stunning-sunset-seen-from-the-sea-4119-large.mp4"
+                    type="video/mp4" label="144P" />
+            </video>
+            <h3 class="title">09. heres the video title</h3>
+            <button class="btn btn-dark btn-sm"><span class="badge"></span></button>
+
+
+        </div>
+        <div id=10 class="vid">
+            <video>
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-traveling-on-the-highway-on-a-sunny-day-42368-large.mp4"
+                    type="video/mp4" label="720P" />
+                <source
+                    src="https://cdn.videvo.net/videvo_files/video/free/2013-09/large_watermarked/AbstractRotatingCubesVidevo_preview.mp4"
+                    type="video/mp4" label="480P" />
+                <source
+                    src="https://media.istockphoto.com/videos/digital-abstract-optic-lights-environment-video-id1272167390"
+                    type="video/mp4" label="144P" />
+            </video>
+            <h3 class="title">09. heres the video title</h3>
+            <button class="btn btn-dark btn-sm"><span class="badge"></span></button>
+
+
+        </div>
+        <div id=11 class="vid">
+            <video muted>
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-stunning-sunset-seen-from-the-sea-4119-large.mp4"
+                    type="video/mp4" label="720P" />
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-stunning-sunset-seen-from-the-sea-4119-large.mp4"
+                    type="video/mp4" label="480P" />
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-stunning-sunset-seen-from-the-sea-4119-large.mp4"
+                    type="video/mp4" label="144P" />
+            </video>
+            <h3 class="title">09. heres the video title</h3>
+            <button class="btn btn-dark btn-sm"><span class="badge"></span></button>
+
+
+        </div>
+        <div id=12 class="vid">
+            <video muted>
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-stunning-sunset-seen-from-the-sea-4119-large.mp4"
+                    type="video/mp4" label="720P" />
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-stunning-sunset-seen-from-the-sea-4119-large.mp4"
+                    type="video/mp4" label="480P" />
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-stunning-sunset-seen-from-the-sea-4119-large.mp4"
+                    type="video/mp4" label="144P" />
+            </video>
+            <h3 class="title">12. heres the video title</h3>
+            <button class="btn btn-dark btn-sm"><span class="badge"></span></button>
+
+
+        </div>
+        <div id=13 class="vid">
+            <video muted>
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-stunning-sunset-seen-from-the-sea-4119-large.mp4"
+                    type="video/mp4" label="720P" />
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-stunning-sunset-seen-from-the-sea-4119-large.mp4"
+                    type="video/mp4" label="480P" />
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-stunning-sunset-seen-from-the-sea-4119-large.mp4"
+                    type="video/mp4" label="144P" />
+            </video>
+            <h3 class="title">13. heres the video title</h3>
+            <button class="btn btn-dark btn-sm"><span class="badge"></span></button>
+
+
+        </div>
+        <div id=14 class="vid">
+            <video muted>
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-stunning-sunset-seen-from-the-sea-4119-large.mp4"
+                    type="video/mp4" label="720P" />
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-stunning-sunset-seen-from-the-sea-4119-large.mp4"
+                    type="video/mp4" label="480P" />
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-stunning-sunset-seen-from-the-sea-4119-large.mp4"
+                    type="video/mp4" label="144P" />
+            </video>
+            <h3 class="title">14. heres the video title</h3>
+            <button class="btn btn-dark btn-sm"><span class="badge"></span></button>
+
+
+        </div>
+        <div id=15 class="vid">
+            <video muted>
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-stunning-sunset-seen-from-the-sea-4119-large.mp4"
+                    type="video/mp4" label="720P" />
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-stunning-sunset-seen-from-the-sea-4119-large.mp4"
+                    type="video/mp4" label="480P" />
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-stunning-sunset-seen-from-the-sea-4119-large.mp4"
+                    type="video/mp4" label="144P" />
+            </video>
+            <h3 class="title">15. heres the video title</h3>
+            <button class="btn btn-dark btn-sm"><span class="badge"></span></button>
+
+
+        </div>
+    </div>
+
+</div>
+
+
+<noscript>
+    <meta http-equiv="refresh" content="0.0;url=home">
+    <!-- <style>
+        body {
+            display: none;
+        }
+    </style> -->
+</noscript>
+<!--If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<!-- <script type="module" src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>  -->
+
+
+
+<!-- check if the video track is ended using the htmlmediaelement (ended event) -->
+<!-- videoJS CDN -->
+<script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
+
+<!-- hotkeys CDN -->
+<script src="https://cdn.sc.gl/videojs-hotkeys/latest/videojs.hotkeys.min.js"></script>
+
+
+<!-- quality selector CDN -->
+<script src="https://unpkg.com/@silvermine/videojs-quality-selector/dist/js/silvermine-videojs-quality-selector.min.js">
+</script>
+
+<!-- JavaScript for the vjs library  -->
+<script src="vid.js" defer></script>
+
+<script src="duration.js" defer async></script>
