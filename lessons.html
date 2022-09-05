@@ -12,7 +12,7 @@
         crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"> -->
 
 
     <!-- style for the page -->
@@ -28,7 +28,7 @@
     <!-- Quality selector CSS  -->
     <link href="https://unpkg.com/@silvermine/videojs-quality-selector/dist/css/quality-selector.css"
         rel="stylesheet" />
- 
+
 </head>
 
 <body>
@@ -317,37 +317,40 @@
     </div>
 
 
+
 </body>
 
-</html>
 
 
-<noscript>
-    <meta http-equiv="refresh" content="0.0;url=home">
-    <!-- <style>
+    <noscript>
+        <meta http-equiv="refresh" content="0.0;url=home">
+        <!-- <style>
         body {
             display: none;
         }
     </style> -->
-</noscript>
-<!--If you'd like to support IE8 (for Video.js versions prior to v7) -->
-<!-- <script type="module" src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>  -->
+    </noscript>
+    <!--If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <!-- <script type="module" src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>  -->
 
 
 
-<!-- check if the video track is ended using the htmlmediaelement (ended event) -->
-<!-- videoJS CDN -->
-<script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
+    <!-- check if the video track is ended using the htmlmediaelement (ended event) -->
+    <!-- videoJS CDN -->
+    <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
 
-<!-- hotkeys CDN -->
-<script src="https://cdn.sc.gl/videojs-hotkeys/latest/videojs.hotkeys.min.js"></script>
+    <!-- hotkeys CDN -->
+    <script src="https://cdn.sc.gl/videojs-hotkeys/latest/videojs.hotkeys.min.js"></script>
 
 
-<!-- quality selector CDN -->
-<script src="https://unpkg.com/@silvermine/videojs-quality-selector/dist/js/silvermine-videojs-quality-selector.min.js">
-</script>
+    <!-- quality selector CDN -->
+    <script
+        src="https://unpkg.com/@silvermine/videojs-quality-selector/dist/js/silvermine-videojs-quality-selector.min.js">
+        </script>
 
-<!-- JavaScript for the vjs library  -->
-<script src="vid.js" defer></script>
+    <!-- JavaScript for the vjs library  -->
+    <script src="vid.js" defer></script>
 
-<script src="duration.js" defer></script>
+    <script src="duration.js" defer async></script>
+
+</html>
