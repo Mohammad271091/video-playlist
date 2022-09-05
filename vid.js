@@ -63,18 +63,18 @@ listVideo.forEach(video => {
 });
 
 // disable rt click 
-window.addEventListener('contextmenu', function (e) {
-  e.preventDefault();
-}, false);
+// window.addEventListener('contextmenu', function (e) {
+//   e.preventDefault();
+// }, false);
 
-document.addEventListener("keydown", function (event) {
-  // var key = event.key || event.keyCode;
-   if ( event.keyCode == 123 || (event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74) || (event.ctrlKey && event.shiftKey && event.keyCode == 67)) {
-     event.preventDefault();
-     alert('Dear Student..\nEnjoy our Lessons!, \n If you\'re facing any problems, please contact us..');
-     return false;
-  }
-}, false);
+// document.addEventListener("keydown", function (event) {
+//   // var key = event.key || event.keyCode;
+//    if ( event.keyCode == 123 || (event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74) || (event.ctrlKey && event.shiftKey && event.keyCode == 67)) {
+//      event.preventDefault();
+//      alert('Dear Student..\nEnjoy our Lessons!, \n If you\'re facing any problems, please contact us..');
+//      return false;
+//   }
+// }, false);
 
 
 // Handle Video PlayList
