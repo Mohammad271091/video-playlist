@@ -61,7 +61,7 @@ listVideo.forEach(video => {
 
 });
 
-disable rt click 
+// disable rt click 
   window.addEventListener('contextmenu', function (e) {
     e.preventDefault();
   }, false);
