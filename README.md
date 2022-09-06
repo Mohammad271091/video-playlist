@@ -1,4 +1,4 @@
-# Responsive video playlist with Dark/light mode toggle and video duration
+# Responsive video playlist with Dark/light mode toggle and video duration and video saving protection
 
 Here, See a [DEMO](https://cheerful-bienenstitch-239dd7.netlify.app/lessons.html)
 

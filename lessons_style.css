@@ -12,7 +12,6 @@
 /* DARK MODE TOGGLE  */
 body.dark {
     background-color: #181818;
-    /* transition: all 0.3s linear; */
 }
 
 body.dark .main-video .title {
@@ -105,7 +104,6 @@ body {
     /* youtube */
     /* background: #181818;  FOR DARK MODE*/
     background: rgb(248, 250, 252);
-    /* transition: all 0.3s linear; */
 
 }
 
@@ -277,9 +275,10 @@ body {
         margin-top: 0px;
     }
 
-    .containers .video-list {
-        height: 45%;
-        overflow-y: auto;
+
+
+    .containers .video-list{
+        height: 60%;
     }
 
     body{
@@ -299,3 +298,8 @@ body {
 
     }
 }
+
+    /* .containers .video-list {
+        height: 45%;
+        overflow-y: auto;
+    } */

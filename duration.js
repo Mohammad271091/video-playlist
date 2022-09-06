@@ -15,3 +15,4 @@ function format(s) {
     s = (s >= 10) ? s : "0" + s;
     return m + ":" + s;
 }
+
